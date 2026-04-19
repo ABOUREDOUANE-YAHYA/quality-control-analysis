@@ -1,0 +1,110 @@
+# Quality Control Analysis Dashboard
+
+> Six Sigma-inspired dashboard analyzing 380,000+ manufacturing defects
+> across 4 production lines, built to identify root causes and prioritize
+> corrective actions using industrial quality control methods.
+
+---
+
+## Problem Statement
+
+In a manufacturing facility producing phosphate-based products, how can we:
+- Identify which **defect types** cause 80% of quality issues? (Pareto principle)
+- Detect which **production lines and machines** are the most critical?
+- Measure process performance using **DPMO and Sigma Level**?
+- Find whether the **night shift** has a significantly higher defect rate?
+
+---
+
+## Key KPIs
+
+| KPI | Value |
+|-----|-------|
+| Total Defects Analyzed | 380,661 |
+| Most Critical Line | Ligne C (44.7% of defects) |
+| Top Defect Type | Contamination (30.1%) |
+| Period | Jan 2023 → Dec 2024 |
+| Products Tracked | 4 |
+| Defect Types | 6 |
+
+---
+
+## Dashboard Features
+
+- **Pareto Chart** — identifies the 2-3 defect types causing 80% of issues
+- **Defects by Production Line** — highlights critical lines in red
+- **Monthly Defect Trend** — detects seasonality and degradation over time
+- **Shift Analysis** — compares Matin / Après-midi / Nuit defect rates
+- **Top 10 Machines** — targets maintenance priorities
+- **DPMO & Sigma Level** — measures overall process quality
+- **Interactive filters** — by line, product, shift, defect type, and date range
+
+---
+
+## Six Sigma Concepts Applied
+
+|        Concept       |            Application            |
+|----------------------|-----------------------------------|
+| Pareto (80/20)       | Focus on top defect types         |
+| DPMO                 | Defects Per Million Opportunities |
+| Sigma Level          | Overall process quality score     |
+| Control Charts       | Monthly trend monitoring          |
+| Root Cause targeting | Machine & shift analysis          |
+
+---
+
+## Tech Stack
+
+|    Tool    |            Usage           |
+|------------|----------------------------|
+| Python     | Data simulation & analysis |
+| pandas     | Data manipulation          |
+| matplotlib | Data visualization         |
+| Streamlit  | Interactive dashboard      |
+
+---
+
+## Project Structure
+quality-control-dashboard/
+├── generate_data.py          # Realistic defect data simulation
+├── quality_control_data.csv  # Generated dataset (7,648 rows)
+├── dashboard.py              # Streamlit dashboard
+├── requirements.txt          # Dependencies
+└── README.md                 # You are here
+---
+
+## How to Run
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/ABOUREDOUANE-YAHYA/quality-control-analysis.git
+cd quality-control-dashboard
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Generate the data
+python generate_data.py
+
+# 4. Launch the dashboard
+streamlit run dashboard.py
+```
+
+---
+
+## Why This Project Matters
+
+This project bridges both sides of my hybrid profile:
+- **Industrial Engineering** — Six Sigma, Pareto, DPMO, Lean Manufacturing
+- **Data Science** — simulation, Python analysis, interactive visualization
+
+The combination makes it directly applicable to Quality, Production,
+and Continuous Improvement roles in industrial companies.
+
+---
+
+## 👤 Author
+
+**Yahya Abouredouane**
+Master IMI — FSTS Settat
+[LinkedIn](https://www.linkedin.com/in/yahya-abouredouane-v200420/) · [GitHub](https://github.com/ABOUREDOUANE-YAHYA)
